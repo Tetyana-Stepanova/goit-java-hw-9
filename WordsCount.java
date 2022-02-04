@@ -34,7 +34,7 @@ public class WordsCount {
         Map<String, Integer> wordsMap = new HashMap<>();
         for (int i=0; i<singlList.size(); i++){
             int count = 0;
-            if (wordsMap.get(singlList.get(i))==null){
+            if (wordsMap.get(singlList.get(i))==null & singlList.get(i)!=null & !singlList.get(i).trim().isEmpty()){
                 for(int j=0; j< singlList.size(); j++){
                     if(singlList.get(i).equals(singlList.get(j))){
                         count++;
